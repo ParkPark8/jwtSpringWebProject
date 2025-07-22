@@ -20,8 +20,6 @@ public class BookingDTO {
     private String time;
     private String docInfo;
     private String branchName;
-    private String branchBranchName;
-    private String userEmail;
 
     public static BookingDTO of(BookingVO booking) {
         return BookingDTO.builder()
@@ -32,8 +30,6 @@ public class BookingDTO {
                 .time(booking.getTime())
                 .docInfo(booking.getDocInfo())
                 .branchName(booking.getBranchName())
-                .branchBranchName(booking.getBranchBranchName())
-                .userEmail(booking.getUserEmail())
                 .build();
     }
 
@@ -46,8 +42,6 @@ public class BookingDTO {
                 .time(time)
                 .docInfo(docInfo)
                 .branchName(branchName)
-                .branchBranchName(branchBranchName)
-                .userEmail(userEmail)
                 .build();
     }
 }

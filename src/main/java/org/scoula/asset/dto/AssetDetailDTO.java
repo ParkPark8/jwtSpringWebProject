@@ -21,7 +21,6 @@ public class AssetDetailDTO {
     private Date endDate;
     private String assetName;
     private String businessType;
-    private String categoryAssetCategoryCode;
 
     public static AssetDetailDTO of(AssetDetailVO assetDetail) {
         return AssetDetailDTO.builder()
@@ -33,7 +32,6 @@ public class AssetDetailDTO {
                 .endDate(assetDetail.getEndDate())
                 .assetName(assetDetail.getAssetName())
                 .businessType(assetDetail.getBusinessType())
-                .categoryAssetCategoryCode(assetDetail.getCategoryAssetCategoryCode())
                 .build();
     }
 
@@ -47,7 +45,6 @@ public class AssetDetailDTO {
                 .endDate(endDate)
                 .assetName(assetName)
                 .businessType(businessType)
-                .categoryAssetCategoryCode(categoryAssetCategoryCode)
                 .build();
     }
 }

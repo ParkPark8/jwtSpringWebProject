@@ -20,5 +20,4 @@ public class AssetDetailVO {
     private Date endDate;
     private String assetName;
     private String businessType;
-    private String categoryAssetCategoryCode;
 }

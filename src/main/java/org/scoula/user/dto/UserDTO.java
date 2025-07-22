@@ -19,7 +19,6 @@ public class UserDTO {
     private Date birth;
     private String branchName;
     private String connectedId;
-    private String branchBranchName;
 
     public static UserDTO of(UserVO user) {
         return UserDTO.builder()
@@ -29,7 +28,6 @@ public class UserDTO {
                 .birth(user.getBirth())
                 .branchName(user.getBranchName())
                 .connectedId(user.getConnectedId())
-                .branchBranchName(user.getBranchBranchName())
                 .build();
     }
 
@@ -41,7 +39,6 @@ public class UserDTO {
                 .birth(birth)
                 .branchName(branchName)
                 .connectedId(connectedId)
-                .branchBranchName(branchBranchName)
                 .build();
     }
 }

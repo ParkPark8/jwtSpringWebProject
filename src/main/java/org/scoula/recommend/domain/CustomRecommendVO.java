@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 public class CustomRecommendVO {
     private String prdtId;
     private String email;
+    private String code;
     private String recReason;
     private String segment;
 }

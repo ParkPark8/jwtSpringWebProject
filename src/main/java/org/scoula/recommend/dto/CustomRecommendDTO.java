@@ -13,6 +13,7 @@ import org.scoula.recommend.domain.CustomRecommendVO;
 public class CustomRecommendDTO {
     private String prdtId;
     private String email;
+    private String code;
     private String recReason;
     private String segment;
 
@@ -20,6 +21,7 @@ public class CustomRecommendDTO {
         return CustomRecommendDTO.builder()
                 .prdtId(customRecommend.getPrdtId())
                 .email(customRecommend.getEmail())
+                .code(customRecommend.getCode())
                 .recReason(customRecommend.getRecReason())
                 .segment(customRecommend.getSegment())
                 .build();
@@ -29,6 +31,7 @@ public class CustomRecommendDTO {
         return CustomRecommendVO.builder()
                 .prdtId(prdtId)
                 .email(email)
+                .code(code)
                 .recReason(recReason)
                 .segment(segment)
                 .build();

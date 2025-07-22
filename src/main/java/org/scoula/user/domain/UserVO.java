@@ -19,5 +19,4 @@ public class UserVO {
     private Date birth;
     private String branchName;
     private String connectedId;
-    private String branchBranchName;
 }

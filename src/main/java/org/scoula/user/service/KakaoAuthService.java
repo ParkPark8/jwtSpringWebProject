@@ -193,7 +193,6 @@ public class KakaoAuthService {
             .userPhone(null)
             .branchName(null)
             .connectedId(null)
-            .branchBranchName(null)
             .build();
 
         userMapper.save(newUser);

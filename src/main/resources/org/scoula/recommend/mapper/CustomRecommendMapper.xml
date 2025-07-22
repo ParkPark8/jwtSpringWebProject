@@ -4,6 +4,7 @@
     <resultMap id="customRecommendMap" type="org.scoula.recommend.domain.CustomRecommendVO">
         <id property="prdtId" column="prdt_id"/>
         <id property="email" column="email"/>
+        <result property="code" column="code"/>
         <result property="recReason" column="rec_reason"/>
         <result property="segment" column="segment"/>
     </resultMap>
@@ -13,13 +14,14 @@
     </select>
 
     <insert id="insertCustomRecommend">
-        INSERT INTO custom_recommand_prdt (prdt_id, email, rec_reason, segment)
-        VALUES (#{prdtId}, #{email}, #{recReason}, #{segment})
+        INSERT INTO custom_recommand_prdt (prdt_id, email, code, rec_reason, segment)
+        VALUES (#{prdtId}, #{email}, #{code}, #{recReason}, #{segment})
     </insert>
 
     <update id="updateCustomRecommend">
         UPDATE custom_recommand_prdt
-        SET rec_reason = #{recReason},
+        SET code = #{code},
+            rec_reason = #{recReason},
             segment = #{segment}
         WHERE prdt_id = #{prdtId} AND email = #{email}
     </update>
